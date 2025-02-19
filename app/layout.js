@@ -1,6 +1,6 @@
 import { Inter } from 'next/font/google'
 import '@/app/_styles/globals.css'
-//import Header from '@/app/_components/Header';
+import Header from '@/app/_components/Header'
 
 const inter = Inter({ subsets: ['latin'], weight: '400' })
 
@@ -18,7 +18,7 @@ export default function RootLayout({ children }) {
       <body
         className={`${inter.className} antialiased bg-primary-900 text-primary-100 min-h-screen flex flex-col relative`}
       >
-        {/* <Header /> */}
+        <Header />
 
         <div className="flex-1 px-8 py-12 grid">
           <main className="max-w-7xl mx-auto w-full">{children}</main>
