@@ -15,7 +15,7 @@ export default function Page() {
       />
 
       <div className="relative z-10 text-center flex flex-col items-center">
-        <h1 className="text-6xl md:text-8xl text-accent-50 mb-10 tracking-tight font-normal">
+        <h1 className="text-6xl md:text-8xl text-primary-800 mb-10 tracking-tight font-normal bg-primary-50 opacity-40 p-4">
           Welcome to Dashboard
         </h1>
         <div className="mt-20">{/* <SignInButton /> */}</div>

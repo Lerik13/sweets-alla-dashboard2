@@ -4,7 +4,7 @@ import { auth } from '@/app/_lib/auth'
 import SignInButton from './SignInButton'
 import SignOutButton from './SignOutButton'
 
-export default async function Navigation() {
+export default async function NavRight() {
   const session = await auth()
   //console.log(session)
 

@@ -1,6 +1,8 @@
 import { Inter } from 'next/font/google'
 import '@/app/_styles/globals.css'
 import Header from '@/app/_components/Header'
+import { SidebarProvider } from '@/app/_components/context/SidebarContext'
+import Sidebar from '@/app/_components/Sidebar'
 
 const inter = Inter({ subsets: ['latin'], weight: '400' })
 
@@ -18,11 +20,14 @@ export default function RootLayout({ children }) {
       <body
         className={`${inter.className} antialiased bg-accent-50 text-primary-800 min-h-screen flex flex-col relative`}
       >
-        <Header />
+        <SidebarProvider>
+          <Header />
+          <Sidebar />
 
-        <div className="flex-1 px-8 py-12 grid">
-          <main className="max-w-7xl mx-auto w-full">{children}</main>
-        </div>
+          <div className="flex-1 px-8 py-12 grid">
+            <main className="max-w-7xl mx-auto w-full">{children}</main>
+          </div>
+        </SidebarProvider>
       </body>
     </html>
   )

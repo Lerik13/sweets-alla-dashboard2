@@ -32,4 +32,42 @@
       transform: rotate(1turn);
     }
   }
+
+	.button-icon {
+		z-index: 10;
+		background: none;
+		padding: 0.6rem;
+		border-radius: 2.5rem;
+		display: flex;
+		align-items: center;
+		gap: 0.5rem;
+		transition: all 0.2s;
+	
+		&:hover {
+			background-color: theme('colors.accent.500');
+		}
+	
+		& svg {
+			width: 2.2rem;
+			height: 2.2rem;
+			color: theme('colors.primary.800');
+		}		
+	}
+
+	.link-with-icon {
+		
+		& svg {
+			width: 2rem;
+			height: 2rem;
+			color: theme('colors.primary.500');
+			transition: all 0.3s;
+		}
+	
+		&:hover svg,
+		&:active svg,
+		&.active:link svg,
+		&.active:visited svg {
+			color: theme('colors.accent.700');
+		}
+	}
 }
