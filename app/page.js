@@ -1,10 +1,10 @@
 import Image from 'next/image'
-import bg from '@/public/bg.png'
+import bg from '@/public/bg.jpg'
 import SignInButton from '@/app/_components/SignInButton'
 
 export default function Page() {
   return (
-    <div className="mt-24">
+    <div>
       <Image
         src={bg}
         fill

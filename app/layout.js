@@ -25,7 +25,7 @@ export default function RootLayout({ children }) {
           <Sidebar />
 
           <div className="flex-1 px-8 py-12 grid">
-            <main className="max-w-7xl mx-auto w-full">{children}</main>
+            <main className="max-w-7xl mx-auto w-full mt-24">{children}</main>
           </div>
         </SidebarProvider>
       </body>

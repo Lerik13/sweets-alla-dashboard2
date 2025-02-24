@@ -1,17 +1,13 @@
-'use client'
+import { auth } from '@/app/_lib/auth'
+import NavButton from './NavButton'
 
-import { Bars3CenterLeftIcon } from '@heroicons/react/24/solid'
-import { useSidebar } from './context/SidebarContext'
-
-export default function NavLeft() {
-  const { openSidebar } = useSidebar()
+export default async function NavLeft() {
+  const session = await auth()
+  if (!session) return null
 
   return (
-    <button
-      className="button-icon border-primary-200 border"
-      onClick={openSidebar}
-    >
-      <Bars3CenterLeftIcon />
-    </button>
+    <>
+      <NavButton />
+    </>
   )
 }
