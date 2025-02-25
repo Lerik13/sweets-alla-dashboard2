@@ -10,7 +10,7 @@ function ProductCard({ product }) {
       aria-label="Go to product page"
       className="h-[14rem] lg:h-[16rem] xl:h-[22rem] overflow-hidden flex flex-col text-base lg:text-lg font-medium"
     >
-      <div className="relative overflow-hidden h-[12rem] lg:h-[14rem] xl:h-[20rem]">
+      <div className="relative overflow-hidden h-[15rem] lg:h-[14rem] xl:h-[20rem]">
         <Image
           src={image}
           fill

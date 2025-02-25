@@ -16,7 +16,7 @@ function FilterProducts({ categories }) {
   }
 
   return (
-    <div className="border border-accent-800 flex flex-wrap">
+    <div className="border border-accent-800 flex flex-wrap justify-center">
       <Button
         filter="all"
         handleFilter={handleFilter}
