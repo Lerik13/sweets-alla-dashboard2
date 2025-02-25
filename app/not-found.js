@@ -19,7 +19,6 @@ function NotFound() {
       <p className="mt-5 flex justify-center">
         <Link
           href="/"
-          /* className="inline-block bg-accent-500 text-primary-800 px-6 py-3 text-lg" */
           className="py-3 px-5 bg-accent-500 hover:bg-accent-800 hover:text-primary-100 transition-colors flex items-center gap-4 font-semibold text-primary-900"
         >
           <ArrowLeftIcon className="h-5 w-5 text-primary-900" />

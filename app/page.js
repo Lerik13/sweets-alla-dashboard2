@@ -1,6 +1,6 @@
 import Image from 'next/image'
 import bg from '@/public/bg.jpg'
-import SignInButton from '@/app/_components/SignInButton'
+//import SignInButton from '@/app/_components/SignInButton'
 
 export default function Page() {
   return (
