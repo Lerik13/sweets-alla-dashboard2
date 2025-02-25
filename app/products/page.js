@@ -21,7 +21,7 @@ export default async function Page({ searchParams }) {
         Sweet Products
       </h1>
 
-      <div className="flex justify-end mb-8">
+      <div className="flex justify-end mb-4">
         <FilterProducts categories={categories} />
       </div>
 

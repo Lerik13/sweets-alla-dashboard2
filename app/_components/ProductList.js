@@ -18,10 +18,16 @@ async function ProductList({ filter }) {
     )
 
   return (
-    <div className="grid sm:grid-cols-2 md:grid-cols-4 gap-3 md:gap-4">
-      {displayedProducts.map((product) => (
-        <ProductCard product={product} />
-      ))}
+    <div>
+      <p className="text-primary-600 mb-2">
+        Total: <span className="font-bold">{displayedProducts.length}</span>{' '}
+        products
+      </p>
+      <div className="grid sm:grid-cols-2 md:grid-cols-4 gap-3 md:gap-4">
+        {displayedProducts.map((product) => (
+          <ProductCard product={product} />
+        ))}
+      </div>
     </div>
   )
 }
