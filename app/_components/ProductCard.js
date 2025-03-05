@@ -6,7 +6,7 @@ function ProductCard({ product }) {
 
   return (
     <Link
-      href={`/product/${id}`}
+      href={`/dashboard/products/${id}`}
       aria-label="Go to product page"
       className="h-[14rem] lg:h-[16rem] xl:h-[22rem] overflow-hidden flex flex-col text-base lg:text-lg font-medium"
     >
@@ -14,6 +14,8 @@ function ProductCard({ product }) {
         <Image
           src={image}
           fill
+          sizes="(max-width: 600px) 50vw, (max-width: 1024px) 25vw, 20vw"
+          priority={false}
           alt={name}
           className="object-cover hover:scale-110 transition-all duration-300 ease-out"
         />

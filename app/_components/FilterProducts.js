@@ -16,25 +16,29 @@ function FilterProducts({ categories }) {
   }
 
   return (
-    <div className="border border-accent-800 flex flex-wrap justify-center">
-      <Button
-        filter="all"
-        handleFilter={handleFilter}
-        activeFilter={activeFilter}
-      >
-        All sweets
-      </Button>
-
-      {categories.map((category) => (
+    <ul className="border border-accent-800 flex flex-wrap justify-center">
+      <li key="all">
         <Button
-          filter={category.id}
+          filter="all"
           handleFilter={handleFilter}
           activeFilter={activeFilter}
         >
-          {category.name}s
+          All sweets
         </Button>
+      </li>
+
+      {categories.map((category) => (
+        <li key={category.id}>
+          <Button
+            filter={category.id}
+            handleFilter={handleFilter}
+            activeFilter={activeFilter}
+          >
+            {category.name}s
+          </Button>
+        </li>
       ))}
-    </div>
+    </ul>
   )
 }
 

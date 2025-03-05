@@ -18,7 +18,7 @@ export default function NavSidebar() {
       <ul className="space-y-14 text-xl px-6" onClick={() => closeSidebar()}>
         <li>
           <Link
-            href="/products"
+            href="/dashboard/products"
             className="link-with-icon flex space-x-3 items-center hover:text-accent-700"
           >
             <CakeIcon />
@@ -27,7 +27,7 @@ export default function NavSidebar() {
         </li>
         <li>
           <Link
-            href="/categories"
+            href="/dashboard/categories"
             className="link-with-icon flex space-x-3 items-center hover:text-accent-700"
           >
             <TagIcon />
@@ -36,7 +36,7 @@ export default function NavSidebar() {
         </li>
         <li>
           <Link
-            href="/hero"
+            href="/dashboard/hero"
             className="link-with-icon flex space-x-3 items-center hover:text-accent-700"
           >
             <ExclamationCircleIcon />
@@ -45,7 +45,7 @@ export default function NavSidebar() {
         </li>
         <li>
           <Link
-            href="/reviews"
+            href="/dashboard/reviews"
             className="link-with-icon flex space-x-3 items-center hover:text-accent-700"
           >
             <ChatBubbleLeftEllipsisIcon />
@@ -54,7 +54,7 @@ export default function NavSidebar() {
         </li>
         <li>
           <Link
-            href="/settings"
+            href="/dashboard/settings"
             className="link-with-icon flex space-x-3 items-center hover:text-accent-700"
           >
             <Cog8ToothIcon />
